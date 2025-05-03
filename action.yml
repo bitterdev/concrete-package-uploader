@@ -1,0 +1,15 @@
+name: Upload Concrete Package
+description: Uploads a Concrete CMS package to a server
+inputs:
+  username:
+    description: 'Username for authentication'
+    required: true
+  password:
+    description: 'Password for authentication'
+    required: true
+  packageFile:
+    description: 'Path to the Concrete CMS package zip file'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
