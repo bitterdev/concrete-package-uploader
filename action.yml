@@ -11,5 +11,5 @@ inputs:
     description: 'Path to the Concrete CMS package zip file'
     required: true
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: 'node20'
+  main: 'dist/index.js'

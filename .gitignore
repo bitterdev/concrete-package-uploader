@@ -1,0 +1,25 @@
+# Ignore node dependencies
+node_modules/
+
+# Ignore local environment files
+.env
+
+# Ignore logs
+*.log
+
+# Ignore the build cache of ncc
+dist/
+
+# Allow dist/index.js (built output)
+!dist/
+!dist/index.js
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/project files
+.vscode/
+.idea/
+*.swp
+
