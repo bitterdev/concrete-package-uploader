@@ -1,6 +1,9 @@
 name: Upload Concrete Package
 description: Uploads a Concrete CMS package to a server
 inputs:
+  uuid:
+    description: 'UUID of the Concrete CMS marketplace item'
+    required: true
   username:
     description: 'Username for authentication'
     required: true

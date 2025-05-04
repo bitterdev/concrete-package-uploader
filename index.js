@@ -9,31 +9,21 @@ async function run() {
     const username = core.getInput('username');
     const password = core.getInput('password');
     const packageFile = core.getInput('packageFile');
+    const uuid = core.getInput('uuid');
     
     if (!fs.existsSync(packageFile)) {
       core.setFailed(`Package file does not exist: ${packageFile}`);
       return;
     }
 
-    const url = 'https://your-server.example.com/api/upload'; // <- Ziel-URL anpassen
+    const url = 'https://your-server.example.com/api/upload';
 
     const form = new FormData();
     form.append('file', fs.createReadStream(packageFile));
     form.append('username', username);
     form.append('password', password);
 
-    return;
-    const response = await axios.post(url, form, {
-      headers: {
-        ...form.getHeaders()
-      }
-    });
-
-    if (response.status === 200) {
-      core.info('Package uploaded successfully');
-    } else {
-      core.setFailed(`Upload failed with status: ${response.status}`);
-    }
+    // @todo: implement me
 
   } catch (error) {
     core.setFailed(`Action failed: ${error.message}`);
