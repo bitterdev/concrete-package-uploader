@@ -65,4 +65,4 @@ git push origin v1.0.0 -f
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.txt](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
