@@ -13,6 +13,12 @@ inputs:
   packageFile:
     description: 'Path to the Concrete CMS package zip file'
     required: true
+  versionNumber:
+    description: 'Version Number of the package. (Fallback if empty: package controller)'
+    required: false
+  changelog:
+    description: 'Changelog of the package. (Fallback if empty: scrap entry of CHANGELOG file)'
+    required: false
 runs:
   using: 'node20'
   main: 'dist/index.js'
